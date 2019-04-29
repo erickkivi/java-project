@@ -11,6 +11,6 @@ node('linux'){
     }
     
     stage('Reports'){
-        junit 'reports/results.xml'
+        junit 'reports/*.xml'
     }
 }
