@@ -13,7 +13,7 @@ node('linux'){
     }
     
     stage('Deploy'){
-         sh "aws s3 cp dist/rectangle-${BUILD_NUMBER}.jar s3://s3Access"
+         sh "aws s3 cp dist/rectangle-${BUILD_NUMBER}.jar s3://arn:aws:s3:::elasticbeanstalk-us-east-1-405410764804"
     }
     
 
