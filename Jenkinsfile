@@ -13,7 +13,7 @@ node('linux'){
     }
     
     stage('Deploy'){
-         sh "aws s3 cp dist/rectangle-${BUILD_NUMBER}.jar s3://BUCKET_NAME"
+         sh "aws s3 cp dist/rectangle-${BUILD_NUMBER}.jar s3://s3Access"
     }
     
 
